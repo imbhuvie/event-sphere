@@ -5,9 +5,9 @@
 --%>
 
 <%
-    if(session.getAttribute("username")==null){
-    response.sendRedirect("index.jsp");
-    }
+//    if(session.getAttribute("username")==null){
+//    response.sendRedirect("index.jsp");
+//    }
 %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -20,7 +20,7 @@
     <body>
         <div class="navbar">
             <div class="logo">
-                <h1>Event Sphere</h1>
+                <a href="index.jsp" class="logotext">Event Sphere</a>
             </div>
             <div class="navitem">
                 <span><a href="ViewVenue.jsp">View Venue</a></span>

@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+        /*background-color: #072e33;*/
+        /*background-color: #0c7076;*/
+        /*background-color: #0f9890;*/
+        /*background-color: #6da5c0;*/
+        /*background-color: #294d61;*/
 *{
     margin: 0;
     padding: 0;
     font-family: "Raleway", sans-serif;
     /*font-family: "Montserrat", sans-serif;*/
-/*  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;*/
+    /*  font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;*/
 
 }
 html{
@@ -30,7 +34,10 @@ body{
     margin-right: 15px;
     margin-top: 20px;
 }
-.logo{
+.logotext{
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: bold;
     color: #ef233c;
 }
 .navitem{
@@ -53,7 +60,7 @@ body{
     padding-right: 10px;
     color: whitesmoke;
     font-size: 20px;
-    
+
 }
 .logout a{
     padding: 9px 12px 9px 12px;
@@ -68,20 +75,20 @@ body{
 
 /*css for add venue*/
 
-.addvenue{
+.main{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     height: calc(100%-100px);
-    color: #ef233c;
     text-align: center;
 }
 .addvenueform{
     margin-top: 40px;
     width: 300px;
     background-color: white;
-    color: red;
+    /*color: red;*/
+    color: #ef233c;
     padding: 50px;
 }
 .addvenueform input, select{
@@ -109,12 +116,46 @@ body{
     cursor: pointer;
 }
 #submit{
-   
+
     background-color: deepskyblue;
 }
 #reset{
- 
+
     background-color: #ef233c;
     color: white;
 }
 
+/*Css for ViewVenue*/
+
+.venuelist{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.venuelisttable{
+    margin-top: 10px;
+    border: 1px solid #0b090a;
+
+}
+.venuelisttable thead{
+    background-color:#0b090a;
+    color: #d9d9d9;
+}
+.venuelisttable td,th{
+    padding: 10px;
+    border: 1px solid #0b090a;
+
+
+}
+.visit{
+    text-decoration: none;
+    color: #d9d9d9;
+    background-color: green;
+    border-radius: 8px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 50px;
+
+}
